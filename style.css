@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Helvetica, sans-serif;
+}
+
+nav{
+    background-color: black;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: hsl(120, 6%, 77%);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu_button {
+    display: none;
+}
+
+
+@media(max-width: 800px) {
+    .hide_on_mobile{
+        display: none;
+    }
+    .menu_button{
+        display: block;
+    }
+}
+
+@media(max-width: 450px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.sidebar_buttons a{
+    color: white;
+}
+
+
+/* Title of the Webpage*/
+
+#title{
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_body{
+    align-items: center;
+    display: flex;
+    margin-top: 35vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header{
+    animation: fade_in 2s;
+    font-size: 3rem;
+    padding: 40px;
+    color: hsl(120, 100%, 74%);
+}
+
+input[type = text] {
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(9, 193, 255);
+}
+
+button:hover{
+    animation: glow_blue 2s;
+    background-color: rgb(8, 160, 210);
+    cursor: pointer;
+}
+
+/* DATA CARD*/
+#driver_number{
+    padding: 10px;
+}
+#full_name{
+    margin-bottom: 10px;
+}
+#profile{
+    width: 200px;
+    height: 200px;
+}
+#country {
+    width: 60px;
+    height: 40px;
+}
+
+#team {
+    padding: 20px;
+    width: 60px;
+    height: 50px;
+}
+.data_card{
+    padding: 30px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.description{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    flex-direction: column;
+}
+
+/* ANIMATIONS */
+@keyframes fade_in {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpDown{
+    50%{transform: translateY(-75%)};
+}
+
+@keyframes glow_white{
+    50%{box-shadow: 0px 0px 50px hsl(0, 0%, 100%)};
+}
+
+@keyframes glow_blue{
+    50%{box-shadow: 0px 0px 50px hsl(177, 100%, 50%)};
+}
+
+@keyframes glow_green{
+    50%{box-shadow: 0px 0px 50px hsl(104, 95%, 64%)};
+}
+
+@keyframes slideUpDown2{
+    50%{transform: translateY(-50%)};
+}
+
+@keyframes slide_from_Left{ /* keyframe rule, and a name*/
+    /* A few possibilities, to, from, or %*/
+        from{ /* Go to it's resting position*/
+            transform: translateX(-100%);
+        }
+    }
+
+@keyframes slide_from_Right{ /* keyframe rule, and a name*/
+    /* A few possibilities, to, from, or %*/
+        from{ /* Go to it's resting position*/
+            transform: translateX(100%);
+        }
+    }
