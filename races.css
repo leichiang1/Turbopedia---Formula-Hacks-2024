@@ -168,6 +168,15 @@ button:hover{
     border-radius: 10px;
 }
 
+@media (max-width: 450px) {
+    .race_card{
+        flex-direction: column;
+    }
+
+
+
+}
+
 
 /* ANIMATIONS */
 @keyframes fade_in {
@@ -211,5 +220,12 @@ button:hover{
     /* A few possibilities, to, from, or %*/
         from{ /* Go to it's resting position*/
             transform: translateX(100%);
+        }
+    }
+
+@keyframes slide_from_Left{ /* keyframe rule, and a name*/
+    /* A few possibilities, to, from, or %*/
+        from{ /* Go to it's resting position*/
+            transform: translateY(-100%);
         }
     }
