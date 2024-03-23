@@ -169,7 +169,7 @@ button:hover{
 }
 
 @media (max-width: 450px) {
-    .race_card{
+    .description{
         flex-direction: column;
         animation: slide_from_Top 2s;
     }
@@ -224,9 +224,9 @@ button:hover{
         }
     }
 
-@keyframes slide_from_Top{ /* keyframe rule, and a name*/
-    /* A few possibilities, to, from, or %*/
-        from{ /* Go to it's resting position*/
-            transform: translateY(-100%);
+    @keyframes slide_from_Top{ /* keyframe rule, and a name*/
+        /* A few possibilities, to, from, or %*/
+            from{ /* Go to it's resting position*/
+                transform: translateX(100%);
+            }
         }
-    }
