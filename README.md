@@ -10,3 +10,6 @@ Application was constructed with JavaScript, HTML, and CSS.
 
 A demo can be seen here:
 https://devpost.com/software/formula-one-web-encyclopedia-app
+
+The web application was deployed with Vercel:
+formula-hacks-beq58rcpc-lucas-projects-89c03b74.vercel.app
