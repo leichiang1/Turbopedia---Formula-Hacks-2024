@@ -4,7 +4,7 @@ Turbopedia is a web application that allows users to learn about the current For
 This application works by requesting data from OpenF1 API (https://openf1.org/) and reads the json files from the API's response. After processing, the application gathers
 appropriate information and a picture of the driver and race circuit requested and manipulates the HTML and CSS of the website for the user to observe.
 
-This project was made entirely on my own and submitted to UT's Formula Hacks Hackathon in Spring 2024.
+This project was made entirely on my own and presented to judges at UT's Formula Hacks Hackathon under the Best Racing Hack Category in Spring 2024. 
 
 Application was constructed with JavaScript, HTML, and CSS.
 
